@@ -31,6 +31,10 @@ public class App {
 				return STUPID;
 			}
 		}
+		return null;
+
+    }
+}
 
 //		// 3の倍数の1000以下の非負整数の場合、 idiot
 //		if ((i % 3 == 0) && (i <= 1000))
@@ -43,5 +47,3 @@ public class App {
 //		}
 
 
-	}
-}
