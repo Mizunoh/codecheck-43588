@@ -20,30 +20,29 @@ public class App {
 
 		try {
             int i = Integer.parseInt(param);
-        } catch (Exception e) {
+			// 1000以下の非負整数か
+			if (i <= 1000){
+				// 3の倍数か
+				if (i % 3 == 0){
+					// 3がつくか
+					if (param.contains("3"))
+						return DUMB;
+					else
+						return IDIOT;
+					// 3がつくか
+				} else if (param.contains("3")){
+					return STUPID;
+					// それ以外
+				} else {
+					return SMART;
+				}
+				// それ以外
+			} else {
+				return INVALID;
+			}
+		} catch (Exception e) {
 		    return  INVALID;
         }
-
-		// 1000以下の非負整数か
-		if (i <= 1000){
-			// 3の倍数か
-			if (i % 3 == 0){
-				// 3がつくか
-				if (param.contains("3"))
-					return DUMB;
-				else
-					return IDIOT;
-			// 3がつくか
-			} else if (param.contains("3")){
-				return STUPID;
-			// それ以外
-			} else {
-				return SMART;
-			}
-		// それ以外
-		} else {
-			return INVALID;
-		}
     }
 }
 
