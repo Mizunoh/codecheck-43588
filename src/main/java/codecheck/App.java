@@ -15,6 +15,8 @@ public class App {
 		final String IDIOT = "idiot";
 		final String STUPID = "stupid";
 		final String DUMB = "dumb";
+		final String SMART = "smart";
+		final  String INVALID = "invalid";
 
 		int i = Integer.parseInt(param);
 
@@ -27,12 +29,17 @@ public class App {
 					return DUMB;
 				else
 					return IDIOT;
+			// 3がつくか
 			} else if (param.contains("3")){
 				return STUPID;
+			// それ以外
+			} else {
+				return SMART;
 			}
+		// それ以外
+		} else {
+			return INVALID;
 		}
-		return null;
-
     }
 }
 
