@@ -18,7 +18,11 @@ public class App {
 		final String SMART = "smart";
 		final  String INVALID = "invalid";
 
-		int i = Integer.parseInt(param);
+		try {
+            int i = Integer.parseInt(param);
+        } catch (Exception e) {
+		    return  INVALID;
+        }
 
 		// 1000以下の非負整数か
 		if (i <= 1000){
