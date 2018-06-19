@@ -46,14 +46,5 @@ public class App {
     }
 }
 
-//		// 3の倍数の1000以下の非負整数の場合、 idiot
-//		if ((i % 3 == 0) && (i <= 1000))
-//			return IDIOT;
-//			// 3のつく1000以下の非負整数の場合、 stupid
-//		else if ((param.contains("3")) && (i <= 1000)){
-//			return STUPID;
-//		} else {
-//			return null;
-//		}
 
 
